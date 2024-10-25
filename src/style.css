@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.container {
+  height: 48%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  border: 2px solid #444;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.cards-container {
+  height: 100%;
+  width: calc(450px * 8);
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  height: 200px;
+  min-width: 450px;
+  background-color: #444;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.series-name {
+  color: rgb(220, 216, 216);
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teams {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+.btm-cards{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.btm-card{
+  display: inline-block;
+  height: 300px;
+  width: 400px;
+  background-color: #444;
+  border-radius: 10px;
+}
+.btm-top{
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+}
+.btm-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btm-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: start;
+}
+.btm-bottom{
+  height: 50%;
+  width: 100%;
+}
+.btm-content{
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+  padding: 20px;
+}
+.btm-content h3{
+  font-size: 18px;
+  height: 50px;
+  overflow: hidden;
+}
+.btm-content h4{
+  font-size: 12px;
+  height: 45px;
+  overflow: hidden;
+}
+.pagination{
+  height: 70px;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span{
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.pagination-selected{
+  background-color: #777;
+}
+.pagination-disable{
+  opacity: 0;
+}
+.arrow1{
+  position: absolute;
+  bottom: 25%;
+  left: 20px;
+}
+.arrow2{
+  position: absolute;
+  bottom: 25%;
+  right: 20px;
+}
+
+.h3-handleLines {
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: 4.5em;
+}
+.h4-handleLines{
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: 3em;
+
+}
