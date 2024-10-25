@@ -178,7 +178,7 @@ body{
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.5;
+  line-height: 1;
   max-height: 3em;
 
 }
