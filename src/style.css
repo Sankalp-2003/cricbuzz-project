@@ -85,11 +85,28 @@ body{
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 .btm-img img{
   height: 100%;
   width: 100%;
   object-fit: start;
+}
+.img-number{
+  background: #00000088;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 66px;
+
 }
 .btm-bottom{
   height: 50%;
@@ -158,7 +175,7 @@ body{
 .h4-handleLines{
   display: -webkit-box; 
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5;

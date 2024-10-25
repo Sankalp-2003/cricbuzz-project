@@ -25,6 +25,7 @@ function BottomCarousel() {
                     src="https://static.cricbuzz.com/a/img/v1/420x235/i1/c563511/shakeel-ton-leads-pakistan-fig.jpg"
                     alt="image"
                   />
+                  <h1 className="img-number">{elem.id}</h1>
                 </div>
               </div>
               <div className="btm-bottom">
